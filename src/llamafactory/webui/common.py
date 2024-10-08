@@ -42,10 +42,10 @@ if is_gradio_available():
 logger = get_logger(__name__)
 
 
-DEFAULT_CACHE_DIR = "cache"
+DEFAULT_CACHE_DIR = "../fssd/cache"
 DEFAULT_CONFIG_DIR = "config"
 DEFAULT_DATA_DIR = "data"
-DEFAULT_SAVE_DIR = "saves"
+DEFAULT_SAVE_DIR = "../fssd/saves"
 USER_CONFIG = "user_config.yaml"
 QUANTIZATION_BITS = ["8", "6", "5", "4", "3", "2", "1"]
 GPTQ_BITS = ["8", "4", "3", "2"]
