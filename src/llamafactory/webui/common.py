@@ -67,7 +67,7 @@ def get_config_path() -> os.PathLike:
     r"""
     Gets the path to user config.
     """
-    return os.path.join(DEFAULT_CACHE_DIR, USER_CONFIG)
+    return os.path.join(DEFAULT_CONFIG_DIR, USER_CONFIG)
 
 
 def load_config() -> Dict[str, Any]:
