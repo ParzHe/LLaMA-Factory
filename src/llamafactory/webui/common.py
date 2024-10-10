@@ -67,6 +67,8 @@ def get_config_path() -> os.PathLike:
     r"""
     Gets the path to user config.
     """
+    if not os.path.exists(DEFAULT_CONFIG_DIR):
+        os.makedirs(DEFAULT_CONFIG_DIR,exist_ok=True)
     return os.path.join(DEFAULT_CONFIG_DIR, USER_CONFIG)
 
 
