@@ -42,10 +42,10 @@ if is_gradio_available():
 logger = logging.get_logger(__name__)
 
 
-DEFAULT_CACHE_DIR = "cache"
+DEFAULT_CACHE_DIR = "../fssd/cache"
 DEFAULT_CONFIG_DIR = "config"
 DEFAULT_DATA_DIR = "data"
-DEFAULT_SAVE_DIR = "saves"
+DEFAULT_SAVE_DIR = "../fssd/saves"
 USER_CONFIG = "user_config.yaml"
 QUANTIZATION_BITS = ["8", "6", "5", "4", "3", "2", "1"]
 GPTQ_BITS = ["8", "4", "3", "2"]
@@ -67,7 +67,9 @@ def get_config_path() -> os.PathLike:
     r"""
     Gets the path to user config.
     """
-    return os.path.join(DEFAULT_CACHE_DIR, USER_CONFIG)
+    if not os.path.exists(DEFAULT_CONFIG_DIR):
+        os.makedirs(DEFAULT_CONFIG_DIR,exist_ok=True)
+    return os.path.join(DEFAULT_CONFIG_DIR, USER_CONFIG)
 
 
 def load_config() -> Dict[str, Any]:
