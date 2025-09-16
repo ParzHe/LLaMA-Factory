@@ -187,8 +187,8 @@ register_model_group(
 register_model_group(
     models={
         "Baichuan2-7B-Base": {
-            DownloadSource.DEFAULT: "baichuan-inc/Baichuan2-7B-Base",
-            DownloadSource.MODELSCOPE: "baichuan-inc/Baichuan2-7B-Base",
+            DownloadSource.DEFAULT: "/home/tom/fshare/models/baichuan-inc/Baichuan2-7B-Base",
+            DownloadSource.MODELSCOPE: "/home/tom/fshare/models/baichuan-inc/Baichuan2-7B-Base",
         },
         "Baichuan2-13B-Base": {
             DownloadSource.DEFAULT: "baichuan-inc/Baichuan2-13B-Base",
@@ -201,8 +201,8 @@ register_model_group(
             DownloadSource.OPENMIND: "Baichuan/Baichuan2_7b_chat_pt",
         },
         "Baichuan2-13B-Chat": {
-            DownloadSource.DEFAULT: "baichuan-inc/Baichuan2-13B-Chat",
-            DownloadSource.MODELSCOPE: "baichuan-inc/Baichuan2-13B-Chat",
+            DownloadSource.DEFAULT: "/home/tom/fshare/models/baichuan-inc/Baichuan2-13B-Chat",
+            DownloadSource.MODELSCOPE: "/home/tom/fshare/models/baichuan-inc/Baichuan2-13B-Chat",
             DownloadSource.OPENMIND: "Baichuan/Baichuan2_13b_chat_pt",
         },
     },
@@ -1436,12 +1436,12 @@ register_model_group(
 register_model_group(
     models={
         "Llama-3-8B": {
-            DownloadSource.DEFAULT: "meta-llama/Meta-Llama-3-8B",
-            DownloadSource.MODELSCOPE: "LLM-Research/Meta-Llama-3-8B",
+            DownloadSource.DEFAULT: "/home/tom/fshare/models/Llama3/Meta-Llama-3-8B",
+            DownloadSource.MODELSCOPE: "/home/tom/fshare/models/Llama3/Meta-Llama-3-8B",
         },
         "Llama-3-70B": {
-            DownloadSource.DEFAULT: "meta-llama/Meta-Llama-3-70B",
-            DownloadSource.MODELSCOPE: "LLM-Research/Meta-Llama-3-70B",
+            DownloadSource.DEFAULT: "/home/tom/fshare/models/Llama3/Meta-Llama-3-70B",
+            DownloadSource.MODELSCOPE: "/home/tom/fshare/models/Llama3/Meta-Llama-3-70B",
         },
         "Llama-3-8B-Instruct": {
             DownloadSource.DEFAULT: "/home/tom/fshare/models/Llama3/Meta-Llama-3-8B-Instruct",
@@ -3517,8 +3517,8 @@ register_model_group(
             DownloadSource.MODELSCOPE: "01ai/Yi-6B-Chat-4bits",
         },
         "Yi-34B-Chat-8bits": {
-            DownloadSource.DEFAULT: "01-ai/Yi-34B-Chat-8bits",
-            DownloadSource.MODELSCOPE: "01ai/Yi-34B-Chat-8bits",
+            DownloadSource.DEFAULT: "/home/tom/fshare/models/01-ai/Yi-34B-Chat-8bits",
+            DownloadSource.MODELSCOPE: "/home/tom/fshare/models/01-ai/Yi-34B-Chat-8bits",
         },
         "Yi-34B-Chat-4bits": {
             DownloadSource.DEFAULT: "01-ai/Yi-34B-Chat-4bits",
